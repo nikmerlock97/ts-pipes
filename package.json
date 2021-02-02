@@ -6,17 +6,18 @@
   "browser": "dist/how-long-till-lunch.umd.js",
   "dependencies": {
     "ms": "^2.0.0",
-    "rollup-plugin-terser": "^7.0.2"
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.29.0"
   },
   "devDependencies": {
     "@types/ms": "^0.7.30",
-    "rollup": "^1.0.0",
+    "rollup": "^1.32.1",
     "rollup-plugin-commonjs": "^9.2.0",
     "rollup-plugin-node-resolve": "^4.0.0",
     "rollup-plugin-typescript": "^1.0.0",
     "ts-node": "^7.0.1",
     "tslib": "^1.9.3",
-    "typescript": "^3.2.2"
+    "typescript": "^3.9.7"
   },
   "scripts": {
     "build": "rollup -c",
@@ -43,7 +44,7 @@
     "conversion"
   ],
   "author": "nikmerlock97",
-  "license": "MIT",
+  "license": "(MIT OR Apache-2.0)",
   "bugs": {
     "url": "https://github.com/nikmerlock97/svelte-pipes/issues"
   },
