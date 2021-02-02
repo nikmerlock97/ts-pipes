@@ -1,11 +1,8 @@
 # Svelte Pipes
 
-## Pipe transformation functions inspired by Angular Pipes
+### Pipe transformation functions inspired by Angular Pipes
 
-
-[![Greenkeeper badge](https://badges.greenkeeper.io/rollup/rollup-starter-lib.svg)](https://greenkeeper.io/)
-
-This repo contains a bare-bones example of how to create a library using Rollup, including importing a module from `node_modules` and converting it from CommonJS.
+This repo contains a bare-bones example of how to create a library using Rollup and TypeScript, including importing a module from `node_modules` and converting it from CommonJS.
 
 
 <!--
@@ -27,6 +24,8 @@ cd svelte-pipes
 npm install
 ```
 
+#### Building
+
 `npm run build` builds the library to `dist`, generating three files:
 
 1. `dist/how-long-till-lunch.cjs.js`
@@ -40,6 +39,8 @@ npm install
 
 `npm run dev` builds the library, then keeps rebuilding it whenever the source files change using [rollup-watch](https://github.com/rollup/rollup-watch).
 
+
+#### Testing
 `npm test` builds the library, then tests it.
 
 
