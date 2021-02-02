@@ -19,9 +19,9 @@ console.log('it will be lunchtime in ' + howLongTillLunch());
 Clone this repository and install its dependencies:
 
 ```bash
-git clone https://github.com/nikmerlock97/svelte-pipes
-cd svelte-pipes
-npm install
+$   git clone https://github.com/nikmerlock97/svelte-pipes
+$   cd svelte-pipes
+$   npm install
 ```
 
 ### Building
@@ -29,7 +29,7 @@ npm install
 `npm run build` builds the library to `dist`, generating three files:
 
 1. `dist/how-long-till-lunch.cjs.js`
-    A CommonJS bundle, suitable for use in Node.js, that `require`s the external dependency. This corresponds to the `"main"` field in package.json
+    A CommonJS bundle, suitable for use in Node.js, that `require`s the external dependency. This corresponds to the `main` field in package.json
     
 2. `dist/how-long-till-lunch.esm.js`
     an ES module bundle, suitable for use in other people's libraries and applications, that `import`s the external dependency. This corresponds to the `"module"`       field in package.json
