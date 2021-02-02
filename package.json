@@ -20,7 +20,7 @@
     "typescript": "^3.9.7"
   },
   "scripts": {
-    "build": "rollup -c",
+    "build": "rollup -c && tsc",
     "dev": "rollup -c -w",
     "test": "ts-node test/test.ts",
     "pretest": "npm run build"

@@ -9,7 +9,7 @@ export default [
   {
     input: 'src/main.ts',
     output: {
-      name: 'howLongUntilLunch',
+      name: 'Pipe',
       file: pkg.browser,
       format: 'umd',
     },
