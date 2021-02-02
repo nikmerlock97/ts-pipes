@@ -1,4 +1,5 @@
-# rollup-starter-lib TypeScript
+# Svelte Pipes
+## Pipe transformation functions inspired by Angular Pipes
 
 #### forked from [rollup-starter-lib](https://github.com/rollup/rollup-starter-lib/tree/typescript)
 
@@ -17,8 +18,8 @@ console.log('it will be lunchtime in ' + howLongTillLunch());
 Clone this repository and install its dependencies:
 
 ```bash
-git clone https://github.com/nikmerlock97/rollup-lib-ts
-cd rollup-lib-ts
+git clone https://github.com/nikmerlock97/svelte-pipes
+cd svelte-pipes
 npm install
 ```
 
@@ -34,14 +35,6 @@ npm install
 `npm run dev` builds the library, then keeps rebuilding it whenever the source files change using [rollup-watch](https://github.com/rollup/rollup-watch).
 
 `npm test` builds the library, then tests it.
-
-## Variations
-
-* [babel](https://github.com/rollup/rollup-starter-lib/tree/babel) — illustrates writing the source code in ES2015 and transpiling it for older environments with [Babel](https://babeljs.io/)
-* [buble](https://github.com/rollup/rollup-starter-lib/tree/buble) — similar, but using [Bublé](https://buble.surge.sh/) which is a faster alternative with less configuration
-* [TypeScript](https://github.com/rollup/rollup-starter-lib/tree/typescript) — uses [TypeScript](https://www.typescriptlang.org/) for type-safe code and transpiling
-
-
 
 ## License
 
