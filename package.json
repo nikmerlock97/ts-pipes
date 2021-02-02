@@ -41,7 +41,8 @@
     "pipes",
     "svelte",
     "transform",
-    "conversion"
+    "conversion",
+    "angular"
   ],
   "author": "nikmerlock",
   "license": "(MIT OR Apache-2.0)",
