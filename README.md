@@ -5,14 +5,6 @@
 This repo contains a bare-bones example of how to create a library using Rollup and TypeScript, including importing a module from `node_modules` and converting it from CommonJS.
 
 
-<!--
-We're creating a library called `svelte-pipes`, which usefully tells us how long we have to wait until lunch, using the [ms](https://github.com/zeit/ms) package:
-
-```js
-console.log('it will be lunchtime in ' + howLongTillLunch());
-```
-
--->
 
 ## Getting started
 
@@ -24,23 +16,28 @@ $   cd svelte-pipes
 $   npm install
 ```
 
-### Building
 
-`npm run build` builds the library to `dist`, generating three files:
+## Building
 
-1. `dist/how-long-till-lunch.cjs.js`
-    A CommonJS bundle, suitable for use in Node.js, that `require`s the external dependency. This corresponds to the `main` field in package.json
+```bash
+$  npm run build
+```
+
+This builds the library to `dist`, generating three files:
+
+### 1. dist/svelte-pipes.cjs.js
+A CommonJS bundle, suitable for use in Node.js, that `require`s the external dependency. This corresponds to the `main` field in package.json
     
-2. `dist/how-long-till-lunch.esm.js`
-    an ES module bundle, suitable for use in other people's libraries and applications, that `import`s the external dependency. This corresponds to the `"module"`       field in package.json
+### 2. dist/svelte-pipes.esm.js
+an ES module bundle, suitable for use in other people's libraries and applications, that `import`s the external dependency. This corresponds to the                 `"module"`field in package.json
     
-3. `dist/how-long-till-lunch.umd.js`
-    a UMD build, suitable for use in any environment (including the browser, as a `<script>` tag), that includes the external dependency. This corresponds to the       `"browser"` field in package.json
+### 3. dist/svelte-pipes.umd.js
+a UMD build, suitable for use in any environment (including the browser, as a `<script>` tag), that includes the external dependency. This corresponds to the `"browser"` field in package.json
 
 `npm run dev` builds the library, then keeps rebuilding it whenever the source files change using [rollup-watch](https://github.com/rollup/rollup-watch).
 
 
-### Testing
+## Testing
 
 `npm test` builds the library, then tests it.
 
