@@ -5,7 +5,7 @@
 This repo contains a bare-bones example of how to create a library using Rollup and TypeScript, including importing a module from `node_modules` and converting it from CommonJS.
 
 
-![Image of Yaktocat](https://img.shields.io/static/v1?label=Made%20with%20&message=Svelte&color=FF3E00?style=for-the-badge&logo=Svelte)
+![Svelte](https://img.shields.io/static/v1?label=Made%20with%20&message=Svelte&color=#FF3E00&labelColor=#FF3E00)
 
 ## Getting started
 
