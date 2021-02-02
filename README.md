@@ -1,6 +1,6 @@
 # Svelte Pipes
 
-### Pipe transformation functions inspired by Angular Pipes
+### Pipe transformation utility functions for Svelte/Sapper inspired by Angular Pipes and ngx-pipes
 
 This repo contains a bare-bones example of how to create a library using Rollup and TypeScript, including importing a module from `node_modules` and converting it from CommonJS.
 
