@@ -1,8 +1,14 @@
-import ms from 'ms';
-import lunchtime from './lunchtime.js';
-import millisecondsUntil from './millisecondsUntil.js';
+import str from './string/index';
+import arr from './array/index';
 
-export default function howLongUntilLunch(hours: number = 12, minutes: number = 30): string {
-	const millisecondsUntilLunchTime = millisecondsUntil(lunchtime(hours, minutes));
-	return ms(millisecondsUntilLunchTime, { long: true });
+const handleType = {
+  str: str,
+  // 'date': str
+  arr: arr,
+};
+
+export type types = 'arr' | 'str';
+
+export default function Pipe(type: types) {
+  return handleType[type]();
 }
