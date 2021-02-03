@@ -35,8 +35,8 @@ This repo contains a bare-bones example of how to create a library using Rollup 
     - [makePluralString](#makepluralstring)
     - [wrap](#wrap) -->
  - [Array](#Array)   
-    - [flatten](#flatten) <!-- 
-    - [diff](#diff)
+    - [flatten](#flatten) 
+<!--- [diff](#diff)
     - [initial](#initial)
     - [intersection](#intersection)
     - [range](#range)
