@@ -5,7 +5,138 @@
 This repo contains a bare-bones example of how to create a library using Rollup and TypeScript, including importing a module from `node_modules` and converting it from CommonJS.
 
 
-![Svelte](https://img.shields.io/static/v1?label=Made%20with%20&message=Svelte&color=#FF3E00&labelColor=#FF3E00)
+<!-- ![Svelte](https://img.shields.io/static/v1?label=Made%20with%20&message=Svelte&color=#FF3E00&labelColor=#FF3E00) -->
+
+## Table of contents
+
+ - [Installation](#installation)
+ - [Date](#date)   
+    - [timeAgo](#timeago)
+ - [String](#string)
+    - [match](#match)
+    - [repeat](#repeat)
+<!--- [scan](#scan)
+    - [shorten](#shorten)
+    - [stripTags](#striptags)
+    - [ucfirst](#ucfirst)
+    - [ucwords](#ucwords)
+    - [trim](#trim)
+    - [ltrim](#ltrim)
+    - [rtrim](#rtrim)
+    - [reverse](#reverse)
+    - [slugify](#slugify)
+    - [camelize](#camelize)
+    - [latinise](#latinise)
+    - [lines](#lines)
+    - [underscore](#underscore)
+    - [test](#test)
+    - [lpad](#lpad)
+    - [rpad](#rpad)
+    - [makePluralString](#makepluralstring)
+    - [wrap](#wrap) -->
+ - [Array](#Array)   
+    - [flatten](#flatten) <!-- 
+    - [diff](#diff)
+    - [initial](#initial)
+    - [intersection](#intersection)
+    - [range](#range)
+    - [reverse](#reverse)
+    - [tail](#tail)
+    - [truthify](#truthify)
+    - [union](#union)
+    - [unique](#unique)
+    - [without](#without)
+    - [pluck](#pluck)
+    - [shuffle](#shuffle)
+    - [every](#every)
+    - [some](#some)
+    - [sample](#sample)
+    - [groupBy](#groupby)
+    - [groupByImpure](#groupbyimpure)
+    - [filterBy](#filterby)
+    - [filterByImpure](#filterbyimpure)
+    - [orderBy](#orderby)
+    - [orderByImpure](#orderbyimpure)
+    - [chunk](#chunk)
+    - [fromPairs](#fromPairs)
+ - [Object](#object)
+    - [keys](#keys)
+    - [values](#values)
+    - [pairs](#pairs)
+    - [pick](#pick)
+    - [omit](#omit)
+    - [invert](#invert)
+    - [invertBy](#invertby)
+    - [diffObj](#diffobj)
+ - [Math](#math)   
+    - [min](#min)
+    - [max](#max)
+    - [sum](#sum)
+    - [average](#average)
+    - [percentage](#percentage)
+    - [ceil](#ceil)
+    - [floor](#floor)
+    - [round](#round)
+    - [sqrt](#sqrt)
+    - [pow](#pow)
+    - [degrees](#degrees)
+    - [radians](#radians)
+    - [bytes](#bytes) -->
+ - [Boolean](#boolean)   
+    - [isNull](#isnull)
+    - [isDefined](#isdefined)
+    - [isUndefined](#isundefined)
+    - [isString](#isstring)
+    - [isFunction](#isfunction)
+    - [isNumber](#isnumber)
+    - [isArray](#isarray)
+    - [isObject](#isobject)
+    - [isGreaterThan](#isgreaterthan)
+ 
+
+## Installation
+
+1. Use npm to install the package
+
+  ```terminal
+  $ npm install svelte-pipes --save 
+  ```
+
+
+
+## Date
+
+### timeAgo
+
+Time ago pipe converts date to 'just now', 'X days ago', 'last week', 'X days ago', etc..
+
+**Usage:** `string | timeAgo`
+```typescript
+import * as moment from 'moment';
+
+const now = new Date();
+
+// timeAgo also supports moment.js objects
+const lastWeek = moment().subtract(10, 'days');
+```
+
+```html
+<span>Updated: {{now | timeAgo}}</span> <!-- Output: "just now" -->
+<span>Updated: {{lastWeek | timeAgo}}</span> <!-- Output: "last week" -->
+```
+
+## String
+
+### repeat
+
+Repeats a string n times
+
+**Usage:** `string | repeat: times: [separator|optional]`
+
+```html
+<p>{{ 'example' | repeat: 3: '@' }}</p> <!-- Output: "example@example@example" -->
+```
+
 
 ## Getting started
 
@@ -56,4 +187,4 @@ Forked from [rollup-starter-lib](https://github.com/rollup/rollup-starter-lib/tr
 
 Inspiration drawn from [Angular pipes](https://angular.io/api/core/Pipe) and [ngx-pipes](https://github.com/danrevah/ngx-pipes).
 
-[MIT](LICENSE).
+[MIT](LICENSE) License.
