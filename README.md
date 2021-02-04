@@ -1,8 +1,8 @@
-# Svelte Pipes
+# TS Pipes
 
 [![GitHub license](https://img.shields.io/github/license/nikmerlock97/ts-pipes)](https://github.com/nikmerlock97/ts-pipes/blob/typescript/LICENSE)
 
-### Pipe transformation utility functions for Svelte/Sapper inspired by Angular Pipes and ngx-pipes
+### Pipe transformation utility functions for TypeScript/JavaScript inspired by Angular Pipes and ngx-pipes
 
 
 <!-- ![Svelte](https://img.shields.io/static/v1?label=Made%20with%20&message=Svelte&color=#FF3E00&labelColor=#FF3E00) -->
