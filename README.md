@@ -106,28 +106,30 @@
 
 ## Date
 
-### timeAgo
+### timeAgo()
 
 Time ago pipe converts date to 'just now', 'X days ago', 'last week', 'X days ago', etc..
 
 **Usage:** `string | timeAgo`
 ```typescript
-import * as moment from 'moment';
+import Pipe from 'ts-pipes';
+const date = Pipe('date');
 
 const now = new Date();
-
 // timeAgo also supports moment.js objects
 const lastWeek = moment().subtract(10, 'days');
 ```
 
 ```html
-<span>Updated: {{now | timeAgo}}</span> <!-- Output: "just now" -->
-<span>Updated: {{lastWeek | timeAgo}}</span> <!-- Output: "last week" -->
+<span>Updated: { date.timeAgo(now) }</span> <!-- Output: "just now" -->
+<span>Updated: { date.timeAgo(lastWeek) }</span> <!-- Output: "last week" -->
 ```
 
 ## String
 
-### repeat
+
+
+### repeat()
 
 Repeats a string n times
 
