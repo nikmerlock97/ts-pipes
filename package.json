@@ -28,7 +28,7 @@
   "files": [
     "dist"
   ],
-  "description": "Pipe transformation utility functions for Svelte/Sapper inspired by Angular Pipes and ngx-pipes",
+  "description": "Pipe transformation utility functions for TypeScript/JavaScript inspired by Angular Pipes and ngx-pipes",
   "directories": {
     "test": "test"
   },
