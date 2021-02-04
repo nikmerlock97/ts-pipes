@@ -110,11 +110,11 @@
 
 Time ago pipe converts date to 'just now', 'X days ago', 'last week', 'X days ago', etc..
 
-**Usage:** `Pipe('date').timeAgo(date)`
+**Usage:** 
 ```typescript
 import Pipe from 'ts-pipes';
-const date = Pipe('date');
 
+const date = Pipe('date');
 const now = new Date();
 // timeAgo also supports moment.js objects
 const lastWeek = moment().subtract(10, 'days');
