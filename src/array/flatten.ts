@@ -1,4 +1,4 @@
-export function transform<T>(input: any[] | T, shallow = false): any[] | T {
+function transform<T>(input: any[] | T, shallow = false): any[] | T {
   if (!Array.isArray(input)) {
     return input;
   }
@@ -6,7 +6,7 @@ export function transform<T>(input: any[] | T, shallow = false): any[] | T {
   return shallow ? [].concat.apply([], input) : flatten(input);
 }
 
-export default function flatten(array: any[]): any[] {
+export const flatten = (array: any[]): any[] => {
   return array.reduce((arr: any[], elm: any) => {
     if (Array.isArray(elm)) {
       return arr.concat(flatten(elm));
@@ -14,4 +14,4 @@ export default function flatten(array: any[]): any[] {
 
     return arr.concat(elm);
   }, []);
-}
+};

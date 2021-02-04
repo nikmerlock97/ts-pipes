@@ -64,20 +64,3 @@ export function extractDeepPropertyByParentMapKey(obj: any, map: string): any {
 
   return { props, tail };
 }
-
-export default function helpers() {
-  return {
-    isUndefined,
-    isVowel,
-    isNull,
-    isFunction,
-    isNumber,
-    isNumberFinite,
-    isString,
-    isBoolean,
-    isObject,
-    extractDeepPropertyByMapKey,
-    extractDeepPropertyByParentMapKey,
-    applyPrecision,
-  };
-}

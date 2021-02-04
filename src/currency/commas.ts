@@ -1,10 +1,4 @@
-// import { isString } from './../helpers';
-
-export default function commas(
-  num: number,
-  currency?: string,
-  cents?: number
-): string {
+export const commas = (num: number, currency?: string, cents?: number) => {
   const numString = num.toString() || '';
   const numCharacters = numString.split('');
   const withCommas = numCharacters.reduce((prev, cur, i) => {
@@ -15,4 +9,4 @@ export default function commas(
     }
   }, '');
   return withCommas;
-}
+};

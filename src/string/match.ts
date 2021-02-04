@@ -12,6 +12,6 @@ function transform<T>(
   return text.match(new RegExp(pattern, flags));
 }
 
-export default function match(text: any, pattern: string, flags?: string): any {
+export const match = (text: any, pattern: string, flags?: string) => {
   return !!flags ? transform(text, pattern, flags) : transform(text, pattern);
-}
+};
