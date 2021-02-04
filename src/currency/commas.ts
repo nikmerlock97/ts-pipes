@@ -6,7 +6,7 @@ export default function commas(
   cents?: number
 ): string {
   const numString = num.toString() || '';
-  const numCharacters = [...numString];
+  const numCharacters = numString.split('');
   const withCommas = numCharacters.reduce((prev, cur, i) => {
     if (i === 0) {
       return prev + cur;

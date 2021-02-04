@@ -1,6 +1,6 @@
 {
   "name": "ts-pipes",
-  "version": "0.1.43",
+  "version": "0.1.44",
   "main": "dist/ts-pipes.cjs.js",
   "module": "dist/ts-pipes.esm.js",
   "browser": "dist/ts-pipes.umd.js",
