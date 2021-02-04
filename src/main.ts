@@ -9,6 +9,6 @@ const handleType = {
 
 export type types = 'arr' | 'str';
 
-export default function Pipe(type: types) {
+export default function Pipe(type: types = 'str') {
   return handleType[type]();
 }
