@@ -1,19 +1,26 @@
-import * as arr from './array/index';
-import * as cur from './currency/index';
-import * as str from './string/index';
-import * as helpers from './helpers';
+// import * as arr from './array/index';
+// import * as cur from './currency/index';
+// import * as str from './string/index';
+// import * as helpers from './helpers';
 
-export const handleType = {
-  // 'date': date,
-  // obj: obj,
-  arr: arr,
-  bool: helpers,
-  cur: cur,
-  str: str,
-};
+// export const Types = {
+//   // 'date': date,
+//   // obj: obj,
+//   arr,
+//   bool: helpers,
+//   cur,
+//   str,
+// };
 
-export type types = 'arr' | 'str' | 'cur' | 'bool';
+// export type types = 'arr' | 'str' | 'cur' | 'bool';
 
-export default function Pipe(type: types = 'str') {
-  return handleType[type];
-}
+// export function Pipe(type: types = 'str') {
+//   return Types[type];
+// }
+
+export * from './array';
+export * from './currency';
+export * from './date';
+export * from './helpers';
+export * from './ms-example';
+export * from './string';

@@ -21,6 +21,8 @@
   },
   "scripts": {
     "build": "rollup -c && tsc",
+    "build:typescript": "npx typescript -p ./tsconfig.json",
+    "build:typescript:watch": "npx typescript -p ./tsconfig.json --watch",
     "dev": "rollup -c -w",
     "test": "ts-node test/test.ts",
     "pretest": "npm run build"

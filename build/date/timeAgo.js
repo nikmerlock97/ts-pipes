@@ -1,17 +1,22 @@
-export const diffYears = (dateold: Date, datenew: Date) => {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.diffYears = void 0;
+exports.diffYears = (dateold, datenew) => {
     const ynew = datenew.getFullYear();
     const mnew = datenew.getMonth();
     const dnew = datenew.getDate();
     const yold = dateold.getFullYear();
     const mold = dateold.getMonth();
     const dold = dateold.getDate();
-
     let diff = ynew - yold;
-    if (mold > mnew) diff--;
+    if (mold > mnew)
+        diff--;
     else {
         if (mold == mnew) {
-            if (dold > dnew) diff--;
+            if (dold > dnew)
+                diff--;
         }
     }
     return diff;
-}
+};
+//# sourceMappingURL=../../src/dist/date/timeAgo.js.map
