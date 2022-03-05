@@ -10,18 +10,4 @@ export declare function isVowel(letter: string): boolean;
 export declare function applyPrecision(num: number, precision: number): number;
 export declare function extractDeepPropertyByMapKey(obj: any, map: string): any;
 export declare function extractDeepPropertyByParentMapKey(obj: any, map: string): any;
-export default function helpers(): {
-    isUndefined: typeof isUndefined;
-    isVowel: typeof isVowel;
-    isNull: typeof isNull;
-    isFunction: typeof isFunction;
-    isNumber: typeof isNumber;
-    isNumberFinite: typeof isNumberFinite;
-    isString: typeof isString;
-    isBoolean: typeof isBoolean;
-    isObject: typeof isObject;
-    extractDeepPropertyByMapKey: typeof extractDeepPropertyByMapKey;
-    extractDeepPropertyByParentMapKey: typeof extractDeepPropertyByParentMapKey;
-    applyPrecision: typeof applyPrecision;
-};
 //# sourceMappingURL=helpers.d.ts.map

@@ -1,2 +1,2 @@
-export default function match(text: any, pattern: string, flags?: string): any;
+export declare const match: (text: any, pattern: string, flags?: string | undefined) => unknown;
 //# sourceMappingURL=match.d.ts.map

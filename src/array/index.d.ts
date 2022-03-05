@@ -1,5 +1,3 @@
-import flatten from './flatten';
-export default function arr(): {
-    flatten: typeof flatten;
-};
+export * from './flatten';
+export * from './isEqual';
 //# sourceMappingURL=index.d.ts.map

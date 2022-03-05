@@ -1,2 +1,2 @@
-export default function commas(num: number, currency?: string, cents?: number): string;
+export declare const commas: (num: number, currency?: string | undefined, cents?: number | undefined) => string;
 //# sourceMappingURL=commas.d.ts.map

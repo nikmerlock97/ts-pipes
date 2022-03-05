@@ -63,20 +63,3 @@ function extractDeepPropertyByParentMapKey(obj, map) {
     return { props: props, tail: tail };
 }
 exports.extractDeepPropertyByParentMapKey = extractDeepPropertyByParentMapKey;
-function helpers() {
-    return {
-        isUndefined: isUndefined,
-        isVowel: isVowel,
-        isNull: isNull,
-        isFunction: isFunction,
-        isNumber: isNumber,
-        isNumberFinite: isNumberFinite,
-        isString: isString,
-        isBoolean: isBoolean,
-        isObject: isObject,
-        extractDeepPropertyByMapKey: extractDeepPropertyByMapKey,
-        extractDeepPropertyByParentMapKey: extractDeepPropertyByParentMapKey,
-        applyPrecision: applyPrecision,
-    };
-}
-exports.default = helpers;

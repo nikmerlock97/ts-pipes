@@ -1,18 +1,21 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.handleType = void 0;
 var tslib_1 = require("tslib");
-var index_1 = tslib_1.__importDefault(require("./array/index"));
-var index_2 = tslib_1.__importDefault(require("./currency/index"));
-var index_3 = tslib_1.__importDefault(require("./string/index"));
-var handleType = {
-    // 'date': str
-    // obj: obj
-    arr: index_1.default,
-    cur: index_2.default,
-    str: index_3.default,
+var arr = tslib_1.__importStar(require("./array/index"));
+var cur = tslib_1.__importStar(require("./currency/index"));
+var str = tslib_1.__importStar(require("./string/index"));
+var helpers = tslib_1.__importStar(require("./helpers"));
+exports.handleType = {
+    // 'date': date,
+    // obj: obj,
+    arr: arr,
+    bool: helpers,
+    cur: cur,
+    str: str,
 };
 function Pipe(type) {
     if (type === void 0) { type = 'str'; }
-    return handleType[type]();
+    return exports.handleType[type];
 }
 exports.default = Pipe;
