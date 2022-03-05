@@ -10,12 +10,10 @@
 ## Table of contents
 
  - [Installation](#installation)
- - [Date](#date)   
-    - [timeAgo](#timeago)
  - [String](#string)
-    - [match](#match)
     - [repeat](#repeat)
 <!--- [scan](#scan)
+    - [match](#match)
     - [shorten](#shorten)
     - [stripTags](#striptags)
     - [ucfirst](#ucfirst)
@@ -33,8 +31,10 @@
     - [lpad](#lpad)
     - [rpad](#rpad)
     - [makePluralString](#makepluralstring)
-    - [wrap](#wrap) -->
- - [Array](#Array)   
+    - [wrap](#wrap) 
+ - [Date](#date)   
+    - [timeAgo](#timeago)-->
+ - [Array](#array)   
     - [flatten](#flatten) 
 <!--- [diff](#diff)
     - [initial](#initial)
@@ -81,7 +81,7 @@
     - [pow](#pow)
     - [degrees](#degrees)
     - [radians](#radians)
-    - [bytes](#bytes) -->
+    - [bytes](#bytes) 
  - [Boolean](#boolean)   
     - [isNull](#isnull)
     - [isDefined](#isdefined)
@@ -91,7 +91,7 @@
     - [isNumber](#isnumber)
     - [isArray](#isarray)
     - [isObject](#isobject)
-    - [isGreaterThan](#isgreaterthan)
+    - [isGreaterThan](#isgreaterthan) -->
  
 
 ## Installation
@@ -102,13 +102,16 @@
   $ npm install ts-pipes --save 
   ```
 
+## Array
 
+### flatten
 
+<!-- 
 ## Date
 
 ### timeAgo()
 
-Time ago pipe converts date to 'just now', 'X days ago', 'last week', 'X days ago', etc..
+Time ago pipe converts date to 'just now', 'X days ago', 'last week', 'X days ago', etc.. -->
 
 **Usage:** 
 ```typescript
@@ -127,8 +130,6 @@ const lastWeek = moment().subtract(10, 'days');
 
 ## String
 
-
-
 ### repeat()
 
 Repeats a string n times
@@ -139,7 +140,7 @@ Repeats a string n times
 <p>{{ 'example' | repeat: 3: '@' }}</p> <!-- Output: "example@example@example" -->
 ```
 
-
+<!-- 
 ## Getting started
 
 Clone this repository and install its dependencies:
@@ -179,7 +180,7 @@ This builds the library to `dist`, generating three files:
 
 ## Testing
 
-`npm test` builds the library, then tests it.
+`npm test` builds the library, then tests it. -->
 
 
 ## License
